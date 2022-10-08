@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    <br>
+    <h1 style="text-align: center; color: blue;">Road Trip Planner</h1>
+    <div class="card">
+        <div class="card-body">     
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-trip">Trip Name</label>
+                        <input type="text" class="form-control" id="new-trip" placeholder="Add trip name">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-cost">Estimated Cost</label>
+                        <input type="text" class="form-control" id="new-cost" placeholder="Add cost">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary from-control">Add Trip</button>
+            </div>
+        </div>
+    </div> <br>
+
+    <table id="list" class="table table-dark table-striped" >
+        <tr>
+            <th>Task</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Estimated Cost</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <br>
+    <h2 style="text-align: center; color: blue;"> Enter the name of the trip. Then, enter the name of each participant and their allocated budget.</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-adventure-name">Name of Adventure</label> 
+                        <input type="text" class="form-control" id="new-adventure-name">
+                    </div>
+                </div>
+            </div> <br>
+            <div>
+                <button id="new-adventure" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div> <br>
+    
+    <!-- Starting point of our DOM -->
+    <div id="adventures"> <br>
+
+    </div>
+
+    <footer style="color:aliceblue;">Photo by <a style="color:aliceblue;" href="https://unsplash.com/@lamagnotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">louis magnotti</a> on <a style="color:aliceblue;" href="https://unsplash.com/s/photos/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
+   
+   
+
+    <style class="container-fluid">
+        body {
+          background-image: url('plane.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+
+
+    <script src="week10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
